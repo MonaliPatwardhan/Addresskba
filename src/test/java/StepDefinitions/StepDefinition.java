@@ -160,6 +160,7 @@ public class StepDefinition {
 
 		discountText = driver.findElement(By.xpath("//*[@id=\"result\"]/table/tbody/tr[2]/td[5]")).getText();
 		if (discountText.contains(data.get(0).get(4)))
+		
 			System.out.println("Country added in table");
 		else
 			System.out.println("Country not added in table");
