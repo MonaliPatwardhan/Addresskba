@@ -53,6 +53,7 @@ public class StepDefinition {
 		 * firefoxOptions.setBinary(firefoxBinary); firefoxOptions.setProfile(profile);
 		 * driver=new FirefoxDriver(firefoxOptions);
 		 */
+		//Webdriver test
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 
@@ -130,7 +131,7 @@ public class StepDefinition {
 
 	@Then("^all addresses should be displayed to the right$")
 	public void validateResult(DataTable expectedAddresses) {
-
+		
 		// Please fill the required code
 		List<List<String>> data = expectedAddresses.raw();
 		
